@@ -1,0 +1,281 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap");
+:root {
+  --main-color: #2f023d;
+  --sub-color: #c79d6d;
+  --text-color: #fff;
+  --bg-color: #110330;
+}
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  box-sizing: border-box;
+}
+.btn {
+  background-color: transparent;
+  padding: 15px 30px;
+  border: 2px solid var(--sub-color);
+  border-radius: 50px;
+  color: var(--sub-color);
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+.btn:hover {
+  background-color: var(--text-color);
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+.section-padding {
+  padding: 80px 0;
+}
+.justify-content {
+  justify-content: space-between;
+}
+.container {
+  margin: auto;
+  max-width: 1200px;
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+.big-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+.big-image::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  opacity: 0.5;
+  z-index: -2;
+}
+.big-image .big-image-content {
+  text-align: center;
+  width: 100%;
+  margin-bottom: 30px;
+}
+.big-image .big-image-content h2 {
+  font-size: 50px;
+  color: var(--text-color);
+  font-family: "Dancing Script", cursive;
+}
+.big-image .big-image-content p {
+  font-size: 100px;
+  color: var(--text-color);
+  font-family: "Dancing Script", cursive;
+}
+.box-items {
+  width: calc(100% / 4);
+  padding: 15px;
+  position: relative;
+}
+.box-items .box-item {
+  background-color: #fff;
+  padding: 40px;
+  margin: 10px;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+}
+.box-items .box-item h2 {
+  color: var(--sub-color);
+  font-size: 50px;
+}
+.box-items .box-item p {
+  font-size: 15px;
+  font-weight: bold;
+}
+.about {
+  background-color: var(--main-color);
+}
+.section-title {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 30px;
+}
+.section-title h2 {
+  font-size: 40px;
+  color: var(--text-color);
+  text-transform: uppercase;
+}
+.section-title h2::before {
+  content: attr(data-title);
+  display: block;
+  color: var(--sub-color);
+  font-size: 30px;
+  font-family: "Dancing Script", cursive;
+}
+.about .about-item h2 {
+  color: var(--text-color);
+  font-size: 35px;
+}
+.about .about-item p {
+  font-size: 18px;
+  margin: 15px 0 30px;
+  color: var(--text-color);
+}
+.about .about-item img {
+  width: 100%;
+  border-radius: 10px;
+}
+.about-item {
+  width: calc(100% / 2);
+  padding: 15px;
+}
+.about-item-img {
+  position: relative;
+}
+.about-item-img span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  color: var(--main-color);
+  font-family: "Dancing Script", cursive;
+  font-weight: 900;
+  font-size: 30px;
+  transform: translate(-50%, -50%);
+}
+.about-item-img::before {
+  content: "";
+  display: block;
+  width: 100px;
+  height: 100px;
+  border: 3px solid var(--sub-color);
+  position: absolute;
+  top: calc(50% - 50px);
+  left: calc(50% - 50px);
+  animation: spin 5s infinite;
+}
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.about-item .in4-container {
+  display: flex;
+  justify-content: space-between;
+  border-top: 2px solid var(--bg-color);
+  border-bottom: 2px solid var(--bg-color);
+  padding-bottom: 20px;
+}
+.in4 {
+  flex: 1;
+  text-align: center;
+}
+.in4 span {
+  color: var(--text-color);
+  font-weight: bold;
+  font-size: 20px;
+}
+.video {
+  background-color: var(--bg-color);
+}
+.myVideo {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.club {
+  background-color: var(--main-color);
+}
+.club-items img {
+  width: 100%;
+  border-radius: 10px;
+  transition: all 0.5s ease;
+}
+.club-items:hover .club-items-text {
+  background-color: var(--sub-color);
+  transform: translateY(-50px);
+}
+.club-items:hover img {
+  transform: skewX(2deg);
+}
+.club-items-text {
+  position: absolute;
+  padding: 15px 0;
+  right: 30px;
+  left: 30px;
+  bottom: 0;
+  background-color: var(--bg-color);
+  text-align: center;
+  border-radius: 10px;
+  transform: translateY(50%);
+  transition: all 0.5s ease;
+}
+.club-items-text h2 {
+  color: var(--text-color);
+}
+.club-items-text span {
+  color: var(--text-color);
+}
+.btn-club {
+  transform: translateY(60px);
+  margin-left: 530px;
+}
+.footer {
+  padding-top: 80px;
+  position: relative;
+}
+.footer-bg {
+  background-color: var(--bg-color);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  z-index: -2;
+}
+.footer::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  top: 0;
+  opacity: 0.5;
+  z-index: -1;
+}
+.footer-item {
+  text-align: center;
+  width: calc(100% / 2);
+}
+.footer-item i {
+  color: #fff;
+  font-size: 25px;
+  margin-right: 12px;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+.footer-item i:hover {
+  color: var(--sub-color);
+}
+.footer h2 {
+  color: var(--text-color);
+  font-size: 20px;
+}
+.footer p {
+  color: var(--text-color);
+  margin: 12px 0;
+}
+.footer-copyright {
+  text-align: center;
+  padding: 50px 0 12px;
+  color: #fff;
+  margin-top: 20px;
+  border-top: 2px solid var(--main-color);
+}

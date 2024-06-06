@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="login.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.0.0/css/flag-icons.min.css"
+    />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script
+      src="https://kit.fontawesome.com/5bf479b819.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Login</title>
+  </head>
+  <body>
+    <div class="container">
+      <input type="checkbox" id="flip" />
+      <div class="cover">
+        <div class="front">
+          <img src="image/epl2024.jpg" alt="EPL" />
+          <div class="text">
+            <span class="text-1">Football is a king sports</span>
+            <span class="text-2">Let's get connected</span>
+          </div>
+        </div>
+        <div class="back">
+          <img class="backImg" src="image/backbg.png" alt="EPL" />
+          <div class="text">
+            <span class="text-1">Football is a king sports</span>
+            <span class="text-2">Let's get connected</span>
+          </div>
+        </div>
+      </div>
+      <form action="#">
+        <div class="form-content">
+          <div class="login-form">
+            <div class="title">Login</div>
+            <div class="input-boxes">
+              <div class="input-box">
+                <i class="fa-solid fa-envelope"></i>
+                <input type="text" placeholder="Nhập email" required />
+              </div>
+              <div class="input-box">
+                <i class="fa-solid fa-lock"></i>
+                <input type="password" placeholder="Nhập mật khẩu" required />
+              </div>
+              <div class="text"><a href="#">Quên mật khẩu?</a></div>
+              <div class="button input-box">
+                <input type="submit" value="Đăng nhập" />
+              </div>
+              <div class="text login-text">
+                Chưa có tài khoản? <label for="flip">Đăng ký ngay</label>
+              </div>
+              <div class="text login-text">
+                <a href="index.html"><label for="Home">Trang chủ</label></a>
+              </div>
+            </div>
+          </div>
+          <div class="signup-form">
+            <div class="title">Sign up</div>
+            <div class="input-boxes">
+              <div class="input-box">
+                <i class="fa-solid fa-user"></i>
+                <input type="text" placeholder="Nhập tên" required />
+              </div>
+              <div class="input-box">
+                <i class="fa-solid fa-envelope"></i>
+                <input type="text" placeholder="Nhập email" required />
+              </div>
+              <div class="input-box">
+                <i class="fa-solid fa-lock"></i>
+                <input type="password" placeholder="Nhập mật khẩu" required />
+              </div>
+              <div class="button input-box">
+                <input type="submit" value="Đăng ký" />
+              </div>
+              <div class="text signup-text">
+                Đã có tài khoản? <label for="flip">Đăng nhập ngay</label>
+              </div>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>

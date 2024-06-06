@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="player.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.0.0/css/flag-icons.min.css"
+    />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script
+      src="https://kit.fontawesome.com/5bf479b819.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Edwin van der Sar</title>
+  </head>
+  <body>
+    <style>
+      .big-image::before {
+        content: "";
+        display: block;
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        background-image: url("image/edwinvandersarbg.jpeg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-attachment: scroll;
+        background-size: cover;
+        z-index: -2;
+        animation: inout 5s infinite;
+      }
+      @keyframes inout {
+        0%,
+        100% {
+          transform: scale(1);
+        }
+        50% {
+          transform: scale(1.1);
+        }
+      }
+    </style>
+    <section class="big-image">
+      <div class="container">
+        <div class="row">
+          <div
+            class="big-image-content"
+            data-aos="fade-up"
+            data-aos-duration="3000"
+          >
+            <h2>EDWIN</h2>
+            <p>VAN DER SAR</p>
+          </div>
+        </div>
+        <div class="row justify-content">
+          <div class="box-items" data-aos="fade-right" data-aos-duration="3000">
+            <div class="box-item">
+              <h2>186</h2>
+              <br />
+              <p>APPEARANCES</p>
+            </div>
+          </div>
+          <div class="box-items" data-aos="fade-right" data-aos-duration="3000">
+            <div class="box-item">
+              <h2>2</h2>
+              <br />
+              <p>GOLDEN GLOVES</p>
+            </div>
+          </div>
+          <div class="box-items" data-aos="fade-left" data-aos-duration="3000">
+            <div class="box-item">
+              <h2>96</h2>
+              <br />
+              <p>CLEAN SHEETS</p>
+            </div>
+          </div>
+          <div class="box-items" data-aos="fade-left" data-aos-duration="3000">
+            <div class="box-item">
+              <h2>4</h2>
+              <br />
+              <p>TITLES</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="about section-padding">
+      <div class="container">
+        <div class="row">
+          <div
+            class="section-title"
+            data-aos="fade-down"
+            data-aos-duration="3000"
+          >
+            <h2 data-title="STORY">PLAYER CAREER</h2>
+          </div>
+        </div>
+        <div class="row">
+          <div
+            class="about-item"
+            data-aos="fade-right"
+            data-aos-duration="3000"
+          >
+            <h2>SỰ NGHIỆP CỦA EDWIN VAN DER SAR</h2>
+            <p>
+              Van der Sar bắt đầu sự nghiệp tại Ajax và thi đấu ở đây trong 9
+              năm. Anh giành chức vô địch UEFA Cup 1991–92 và UEFA Champions
+              League 1994–95 cùng với danh hiệu Thủ môn xuất sắc nhất châu Âu
+              năm 1995. Năm 1999, Van der Sar chuyển đến Juventus với tầm vóc là
+              một trong những thủ môn hàng đầu châu Âu. Anh đã ra sân 66 lần cho
+              Juventus trong hai năm thi đấu tại Serie A. Anh tiếp tục sự nghiệp
+              ở Anh, trước tiên là Fulham và sau đó là Manchester United. Tại
+              Manchester United, Van der Sar giành chức vô địch UEFA Champions
+              League lần thứ hai vào năm 2008. Anh đã khoác áo Đội tuyển Hà Lan
+              130 lần và là người trấn giữ khung thành cho đội. Van der Sar được
+              đánh giá cao bởi các chuyên gia và đồng đội là một trong những thủ
+              môn xuất sắc nhất mọi thời đại. Anh đã giành 26 danh hiệu lớn
+              trong sự nghiệp, chủ yếu tại Ajax và Manchester United.
+            </p>
+            <div class="in4-container">
+              <div class="in4">
+                <p>Ngày sinh</p>
+                <span>29/10/1970</span>
+              </div>
+              <div class="in4">
+                <p>Quốc tịch</p>
+                <span class="fi fi-nl"></span>
+              </div>
+              <div class="in4">
+                <p>Vị trí</p>
+                <span>Thủ môn</span>
+              </div>
+            </div>
+          </div>
+          <div class="about-item" data-aos="fade-left" data-aos-duration="3000">
+            <div class="about-item-img">
+              <span>26+ years as a goalkeeper</span>
+              <img
+                src="image/edwinvandersarnetherlands.jpg"
+                alt="Edwin van der Sar Netherlands"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="video section-padding">
+      <div class="container">
+        <div class="row">
+          <div
+            class="section-title"
+            data-aos="fade-down"
+            data-aos-duration="3000"
+          >
+            <h2 data-title="VIEW NOW">HIGHLIGHTS VIDEO</h2>
+          </div>
+        </div>
+        <div class="row">
+          <video
+            class="myVideo"
+            controls
+            data-aos="fade-up"
+            data-aos-duration="3000"
+          >
+            <source src="video/edwinvandersar.mp4" type="video/mp4" />
+          </video>
+        </div>
+      </div>
+    </section>
+    <style>
+      .club-items {
+        padding: 15px;
+        width: calc(100% / 3);
+        position: relative;
+      }
+    </style>
+    <section class="club section-padding" id="club">
+      <div class="container">
+        <div class="row">
+          <div
+            class="section-title"
+            data-aos="fade-down"
+            data-aos-duration="3000"
+          >
+            <h2 data-title="FORMER">CLUB</h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="club-items" data-aos="flip-left" data-aos-duration="3000">
+            <img src="image/ajax.jpg" alt="Ajax Amsterdam" height="800px" />
+            <div class="club-items-text">
+              <h2>Ajax Amsterdam</h2>
+              <span>Emirates</span>
+            </div>
+          </div>
+          <div class="club-items" data-aos="flip-left" data-aos-duration="3000">
+            <img src="image/juventus.png" alt="Juventus" height="800px" />
+            <div class="club-items-text">
+              <h2>Juventus</h2>
+              <span>Juventus Stadium</span>
+            </div>
+          </div>
+          <div class="club-items" data-aos="flip-left" data-aos-duration="3000">
+            <img
+              src="image/manchesterunited.jpg"
+              alt="Manchester United"
+              height="800px"
+            />
+            <div class="club-items-text">
+              <h2>Manchester United</h2>
+              <span>Old Trafford</span>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <a href="index.html"><button class="btn btn-club">BACK</button></a>
+        </div>
+      </div>
+    </section>
+    <section class="footer" id="footer">
+      <div class="footer-bg"></div>
+      <div class="container">
+        <div class="row justify-content">
+          <div class="footer-item">
+            <h2>Địa chỉ</h2>
+            <p>KTX khu A<br />ĐHQG TP.HCM</p>
+          </div>
+          <div class="footer-item">
+            <h2>Liên hệ</h2>
+            <p>
+              <i class="fa-solid fa-phone"></i> <span>0394080648</span><br /><i
+                class="fa-solid fa-envelope"
+              ></i>
+              <span>hieulv228@gmail.com</span>
+            </p>
+            <div class="footer-social">
+              <i class="fa-brands fa-facebook"></i>
+              <i class="fa-brands fa-twitter"></i>
+              <i class="fa-brands fa-instagram"></i>
+              <i class="fa-brands fa-linkedin"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="footer-copyright">
+          <p>&copy; 2024 Hieu of Fame. All rights reserved.</p>
+        </div>
+      </div>
+    </section>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>
