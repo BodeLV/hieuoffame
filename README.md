@@ -1,25 +1,19 @@
 # hieuoffame
-Hieu of Fame is a web application dedicated to showcasing the profiles of famous football players. Each player has a dedicated page with their information and highlights.
+Hieu of Fame là một ứng dụng web chuyên giới thiệu profile của các cầu thủ bóng đá nổi tiếng. Mỗi người chơi có một trang dành riêng với thông tin và điểm nổi bật của họ.
+![image](https://github.com/BodeLV/hieuoffame/assets/114569634/ebb82a71-9fba-44cd-99f1-aeef48e57ad8)
 
-Structure
-The website is structured with individual HTML files for each player, such as alissonbecker.html, ashleycole.html, cristianoronaldo.html, and so on. Each player's page is styled with the player.css file.
+## Structure
+Trang web được cấu trúc bằng các tệp HTML riêng cho từng người chơi, chẳng hạn như alissonbecker.html, ashleycole.html, cristianoronaldo.html, v.v. Trang của mỗi người chơi được tạo kiểu bằng tệp player.css. Tệp index.html đóng vai trò là trang chủ của trang web, được tạo kiểu bằng style.css và res.css. Ngoài ra còn có một trang login.html để người dùng đăng nhập, được tạo kiểu bằng login.css.
 
-The index.html file serves as the home page of the website, styled with style.css and res.css.
+## Usage
+Để xem hồ sơ của người chơi, hãy điều hướng đến tệp HTML tương ứng của họ. Ví dụ: để xem hồ sơ của Alisson Becker, hãy mở tệp alissonbecker.html. Để xem trang chủ, hãy mở tệp index.html. Để đăng nhập, hãy mở tệp login.html.
 
-There is also a login.html page for users to log in, styled with login.css.
+## Dependencies
+Trang web sử dụng các thư viện bên ngoài sau:
 
-Usage
-To view a player's profile, navigate to their respective HTML file. For example, to view Alisson Becker's profile, open the alissonbecker.html file.
+- aos for animations
+- flag-icons for country flags
+- fontawesome for icons
 
-To view the home page, open the index.html file.
-
-To log in, open the login.html file.
-
-Dependencies
-The website uses the following external libraries:
-
-aos for animations
-flag-icons for country flags
-fontawesome for icons
-Contributing
-To contribute to this project, please make changes in your own branch and then issue a pull request.
+## Contributing
+Để đóng góp cho dự án này, vui lòng thực hiện các thay đổi trong branch của bạn và sau đó đưa ra yêu cầu pull.
